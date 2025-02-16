@@ -101,3 +101,18 @@ To extract intrinsic and extrinsic parameters from the estimated projection matr
 2. Utilize the estimated projection matrix to reconstruct 2D image points.
 3. Compute the Euclidean reprojection error between observed and reconstructed 2D points.
 4. Visualize comparative discrepancies in reprojections.
+
+### **Task 4: Real-World Simulation (Room Corner with Markers)**
+
+#### Objective:
+
+To simulate a real-world camera calibration scenario using structured 3D markers in a controlled environment.
+
+#### Methodology:
+
+1. Define 3D spatial coordinates corresponding to markers positioned on three orthogonal planes.
+2. Synthesize 2D projections via the ground truth camera parameters.
+3. Introduce Gaussian noise to simulate sensor inaccuracies.
+4. Employ the DLT algorithm to recover the camera projection matrix.
+5. Decompose the estimated **P** and analyze the recovered camera center.
+6. Visualize discrepancies between noisy captured points and reprojected points, and compute the mean projection error.
