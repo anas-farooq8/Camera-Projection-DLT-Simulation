@@ -88,3 +88,16 @@ To derive the camera projection matrix from noisy 3D–2D correspondences using 
 2. Construct the DLT-based system of equations and solve via SVD.
 3. Normalize and refine the computed projection matrix.
 4. Compare the estimated **P** with the reference **P**.
+
+### **Task 3: Projection Matrix Decomposition and Error Analysis**
+
+#### Objective:
+
+To extract intrinsic and extrinsic parameters from the estimated projection matrix and assess reprojection accuracy.
+
+#### Methodology:
+
+1. Decompose the estimated **P** via RQ factorization.
+2. Utilize the estimated projection matrix to reconstruct 2D image points.
+3. Compute the Euclidean reprojection error between observed and reconstructed 2D points.
+4. Visualize comparative discrepancies in reprojections.
