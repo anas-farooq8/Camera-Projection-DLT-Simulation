@@ -80,11 +80,11 @@ To compute and visualize the projection of predefined 3D points onto a 2D image 
 
 #### Objective:
 
-To derive the camera projection matrix from noisy 3D–2D correspondences using the DLT algorithm.
+To derive the camera projection matrix from 3D–2D correspondences using the DLT algorithm.
 
 #### Methodology:
 
-1. Utilize the observed noisy 2D projections and corresponding 3D world points.
+1. Utilize the observed 2D projections and corresponding 3D world points.
 2. Construct the DLT-based system of equations and solve via SVD.
 3. Normalize and refine the computed projection matrix.
 4. Compare the estimated **P** with the reference **P**.
@@ -116,3 +116,18 @@ To simulate a real-world camera calibration scenario using structured 3D markers
 4. Employ the DLT algorithm to recover the camera projection matrix.
 5. Decompose the estimated **P** and analyze the recovered camera center.
 6. Visualize discrepancies between noisy captured points and reprojected points, and compute the mean projection error.
+
+## Demonstration and Visualization
+
+- **Figure 1:** 3D world points and camera reference frame.
+  ![Image](https://github.com/user-attachments/assets/83b4b28d-4726-457f-b42b-acaf9f065d28)
+- **Figure 2:** Estimated vs Actual Parameters.
+  ![Image](https://github.com/user-attachments/assets/6b59be76-86ec-49ab-8bec-a48a31f557ad)
+- **Figure 3:** Ground truth vs. estimated 2D projections.
+  ![Image](https://github.com/user-attachments/assets/21e04102-2c22-4282-b2f7-bc3241ff0d89)
+- **Figure 4:** Error analysis and comparative camera parameter evaluation.
+  ![Image](https://github.com/user-attachments/assets/444b221c-c900-4614-a433-2e80e4922d71)
+
+## Conclusion
+
+This repository provides an extensive computational framework for simulating camera projection and parameter estimation through the DLT methodology. By integrating forward projection, matrix decomposition, and real-world perturbation modeling, it serves as a robust investigative tool for understanding camera calibration principles and projection geometry within a controlled simulation paradigm.
