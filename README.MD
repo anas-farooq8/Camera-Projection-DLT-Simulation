@@ -13,24 +13,6 @@ This repository presents a rigorous Python-based simulation for camera forward p
 - **Empirical Simulation of Real-World Scenarios:** Simulation of a structured room corner with markers across three perpendicular planes, incorporating synthetic measurement noise.
 - **Graphical Representation:** Interactive visualization of 3D world points and corresponding 2D image projections, supplemented by error analysis.
 
-## Installation Instructions
-
-### Repository Cloning
-
-```bash
-git clone https://github.com/yourusername/Camera-Projection-DLT-Simulation.git
-cd Camera-Projection-DLT-Simulation
-```
-
-### Software Dependencies
-
-- Python
-- Required Libraries: `numpy`, `matplotlib`, `scipy`
-
-```bash
-pip install numpy matplotlib scipy
-```
-
 ## Functional Modules
 
 ### `create_rotation_matrix(yaw, pitch, roll)`
